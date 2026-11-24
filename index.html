@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101020"><title>ROBLOX CLUB</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="brand"><span class="logo">R</span><div><b>ROBLOX CLUB</b><small>PLAY · CREATE · SHARE</small></div></div><button id="profileBtn" class="avatar">게스트</button></header>
+<main>
+<section class="hero"><div><span class="tag">COMMUNITY HUB</span><h1>게임을 즐기고,<br><em>함께 성장해.</em></h1><p>공략·리뷰·창작 미션에 참여하고 커뮤니티 포인트를 모아봐.</p><button class="primary" id="joinBtn">닉네임으로 시작하기</button></div><div class="orb">★</div></section>
+<section class="stats"><div><small>참여 미션</small><b id="doneCount">0</b></div><div><small>커뮤니티 포인트</small><b id="points">0 P</b></div><div><small>내 랭킹</small><b id="rank">-</b></div></section>
+<nav class="tabs"><button class="tab active" data-tab="missions">미션</button><button class="tab" data-tab="board">커뮤니티</button><button class="tab" data-tab="ranking">랭킹</button><button class="tab" data-tab="notice">안내</button></nav>
+<section id="missions" class="panel"><div class="section-head"><div><small>DAILY QUEST</small><h2>오늘의 미션</h2></div><span class="pill">포인트는 커뮤니티 활동 점수</span></div><div id="missionList" class="cards"></div></section>
+<section id="board" class="panel hidden"><div class="section-head"><div><small>COMMUNITY</small><h2>게임 이야기</h2></div></div><form id="postForm"><input id="postText" maxlength="180" placeholder="게임 공략이나 추천을 공유해봐" required><button class="primary">게시</button></form><div id="posts" class="posts"></div></section>
+<section id="ranking" class="panel hidden"><div class="section-head"><div><small>WEEKLY</small><h2>활동 랭킹</h2></div></div><div id="rankingList" class="posts"></div></section>
+<section id="notice" class="panel hidden"><div class="section-head"><div><small>IMPORTANT</small><h2>운영 안내</h2></div></div><div class="notice"><b>포인트 안내</b><p>현재 포인트는 사이트 내 활동 점수이며 현금이나 Robux로 교환되지 않습니다. 실제 보상 캠페인은 운영자 확인과 관련 플랫폼·광고주 승인 후 별도 공지합니다.</p><b>안전한 이용</b><p>비밀번호, 전화번호, 학교, 주소 등 개인정보를 게시하지 마세요. 타인의 계정이나 결제정보를 요구하는 미션은 등록하지 않습니다.</p></div></section>
+<footer>ROBLOX CLUB · 커뮤니티 MVP<br><small>비공식 팬 커뮤니티이며 Roblox와 제휴·후원 관계가 아닙니다.</small></footer>
+</main>
+<dialog id="nameDialog"><form method="dialog" id="nameForm"><h3>닉네임 설정</h3><input id="nickname" maxlength="12" placeholder="닉네임 (12자 이내)" required><div class="actions"><button class="primary">시작</button></div></form></dialog>
+<script src="app.js"></script>
+</body></html>
